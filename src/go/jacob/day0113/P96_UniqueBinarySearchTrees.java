@@ -7,7 +7,7 @@ public class P96_UniqueBinarySearchTrees {
 		int[] dp = new int[n + 1];
 		dp[0] = 1;
 		dp[1] = 1;
-		// i£ºµ±Ç°i¸ö½Úµã£»j£ºµ±Ç°µÚj¸ö½ÚµãÎª¸ù½Úµã
+		// iï¼šå½“å‰iä¸ªèŠ‚ç‚¹ï¼›jï¼šå½“å‰ç¬¬jä¸ªèŠ‚ç‚¹ä¸ºæ ¹èŠ‚ç‚¹
 		for (int i = 2; i <= n; i++)
 			for (int j = 1; j <= i; j++) {
 				dp[i] += dp[i - j] * dp[j - 1];
@@ -15,4 +15,6 @@ public class P96_UniqueBinarySearchTrees {
 
 		return dp[n];
 	}
+
+	
 }

@@ -1,6 +1,5 @@
 package go.jacob.day0113;
 
-import static org.junit.Assert.*;
 
 import org.junit.Test;
 
@@ -9,6 +8,7 @@ import org.junit.Test;
  * 2.一个字符串的左子树字符数和右子树字符数是任意的
  */
 public class P87_ScrambleString {
+
 	@Test
 	public void testName() throws Exception {
 		System.out.println(isScramble("great","rgeat"));

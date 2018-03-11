@@ -1,4 +1,4 @@
-package go.jacob.day0204;
+package go.jacob.day0204.sort;
 
 public class Singleton {
 	private volatile static Singleton instance = null;

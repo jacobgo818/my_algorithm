@@ -1,8 +1,9 @@
 package go.jacob.day0113;
 
-import java.util.Stack;
 
 import org.junit.Test;
+
+import java.util.Stack;
 
 public class P84_LargestRectangleInHistogram {
 

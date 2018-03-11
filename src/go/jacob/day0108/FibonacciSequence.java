@@ -1,8 +1,10 @@
 package go.jacob.day0108;
 
+
 import org.junit.Test;
 
 public class FibonacciSequence {
+
 	@Test
 	public void testName() throws Exception {
 		System.out.println(f3(34));

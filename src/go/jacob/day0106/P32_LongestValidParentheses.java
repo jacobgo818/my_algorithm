@@ -1,10 +1,12 @@
 package go.jacob.day0106;
 
-import java.util.Stack;
 
 import org.junit.Test;
 
+import java.util.Stack;
+
 public class P32_LongestValidParentheses {
+
 	@Test
 	public void testName() throws Exception {
 		System.out.println(longestValidParentheses("(()()"));

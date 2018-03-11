@@ -1,10 +1,12 @@
 package go.jacob.day0108;
 
-import java.util.Stack;
 
 import org.junit.Test;
 
+import java.util.Stack;
+
 public class P85_MaximalRectangle {
+
 	@Test
 	public void testName() throws Exception {
 		char[][] matrix = { { '1', '0', '1', '0', '0' }, { '1', '0', '1', '1', '1' }, { '1', '1', '1', '1', '1' },

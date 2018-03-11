@@ -1,10 +1,12 @@
 package go.jacob.day0108;
 
-import java.util.Stack;
 
 import org.junit.Test;
 
+import java.util.Stack;
+
 public class P84_LargestRectangleInHistogram {
+
 	@Test
 	public void testName() throws Exception {
 		int[] heights = { 2, 1, 5, 6, 2, 3 };

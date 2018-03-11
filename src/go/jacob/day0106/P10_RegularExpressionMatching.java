@@ -1,5 +1,6 @@
 package go.jacob.day0106;
 
+
 import org.junit.Test;
 
 /*
@@ -7,6 +8,7 @@ import org.junit.Test;
  * ab .*居然也能通过
  */
 public class P10_RegularExpressionMatching {
+
 	@Test
 	public void testName() throws Exception {
 		System.out.println(isMatch("bboiuouccnnpiopn", "bboi.*"));

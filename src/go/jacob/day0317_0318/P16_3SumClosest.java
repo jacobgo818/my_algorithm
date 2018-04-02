@@ -1,0 +1,63 @@
+package go.jacob.day0317_0318;
+
+import org.junit.Test;
+
+import java.util.Arrays;
+
+/**
+ * Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target.
+ * Return the sum of the three integers. You may assume that each input would have exactly one solution.
+ * <p>
+ * For example, given array S = {-1 2 1 -4}, and target = 1.
+ * <p>
+ * The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
+ */
+public class P16_3SumClosest {
+
+    public int threeSumClosest(int[] nums, int target) {
+        if (nums == null || nums.length < 3)
+            return 0;
+
+        Arrays.sort(nums);
+
+        int closest = Integer.MAX_VALUE;
+        int res = 0;
+        int left, right;
+
+        for (int i = 0; i < nums.length - 2; i++) {
+            if (i != 0 && nums[i] == nums[i - 1])
+                continue;
+            left = i + 1;
+            right = nums.length - 1;
+            while (left < right) {
+                int sum = nums[i] + nums[left] + nums[right];
+                if (sum == target)
+                    return target;
+                else if (sum > target) {
+                    if (sum - target < closest) {
+                        closest = sum - target;
+                        res = sum;
+                    }
+                    right--;
+                } else {
+                    if (target - sum < closest) {
+                        closest = target - sum;
+                        res = sum;
+                    }
+                    left++;
+                }
+
+            }
+
+        }
+        return res;
+    }
+
+    @Test
+    public void test1() {
+        int[] arr = {0,2,1,-3};
+        int target = 1;
+        System.out.println(threeSumClosest(arr, target));
+
+    }
+}

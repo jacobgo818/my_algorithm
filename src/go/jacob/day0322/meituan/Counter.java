@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.util.Scanner;
 
-public class Demo2 {
+public class Counter {
 
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);

@@ -28,13 +28,4 @@ public class LinkedListOperate {
         return head.next;
     }
 
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 }
